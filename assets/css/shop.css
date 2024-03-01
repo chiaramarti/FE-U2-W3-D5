@@ -1,0 +1,313 @@
+:root{
+    --pink: rgb(210, 26, 95);
+    --pink-pastel: rgb(255, 82, 146);
+    --green: rgb(0, 155, 125);
+    --green-pastel: rgb(98, 198, 178);
+    --tiffany: rgb(23, 162, 184);
+    --blu: rgb(0, 55, 125);
+    --blu-mid: rgb(45, 102, 175);
+    --blu-pastel: rgb(104, 149, 209);
+    --yellowpastel: rgb(224, 205, 140);
+    --grey-dark: rgb(48, 52,51);
+    --grey-mid: rgb(78, 90, 93);
+    --grey-clear: rgb(236, 236, 234);
+    --warning: rgb(255, 193, 7);
+    --info: rgb(23, 162, 184);
+    --corsivo: 'Lily Script One';
+    --text: 'Montserrat';
+    --textalt: 'Proza Libre';
+}
+
+/************************************************
+*************************************************
+********* S  H  O  P ****************************
+*************************************************
+************************************************/
+a{
+	text-decoration: none;
+}
+.section-title h4 {
+	font-family: var(--corsivo);
+	font-size: 18pt;
+	border-left: solid 4px var(--pink);
+	padding-left: 14px;
+}
+
+
+.shop {
+	padding-top: 70px;
+	padding-bottom: 80px;
+}
+
+.sidebar-categories {
+	margin-bottom: 50px;
+}
+
+.sidebar-categories .section-title {
+	margin-bottom: 35px;
+}
+
+.categories-accordion .card {
+	border: none;
+	border-radius: 0;
+	padding-bottom: 12px;
+	border-bottom: 1px solid #f2f2f2 !important;
+	margin-bottom: 12px;
+}
+
+.categories-accordion .card:last-child {
+	padding-bottom: 0;
+	margin-bottom: 0;
+	border-bottom: none !important;
+}
+
+.categories-accordion .card-heading {
+	cursor: pointer;
+}
+
+.categories-accordion .card-heading a {
+	font-size: 14px;
+	font-weight: 500;
+	color: var(--grey-dark);
+	display: block;
+}
+
+.categorie-accordion .card-body {
+	padding-left: 0;
+	padding-top: 6px;
+	padding-bottom: 0;
+}
+
+.categories-accordion .card-body li {
+	list-style: none;
+	position: relative;
+	padding-left: 16px;
+}
+
+.categories-accordion .card-body li:before {
+	position: absolute;
+	left: 4px;
+	top: 14px;
+	height: 1px;
+	width: 4px;
+	background: var(--grey-mid);
+	content: "";
+}
+
+.categories-accordion .card-body li a {
+	font-size: 14px;
+	color: var(--grey-mid);
+	line-height: 30px;
+}
+
+.categories-accordion .card-heading a:after,
+.categories-accordion .card-heading>a.active[aria-expanded=false]:after {
+	content: "";
+	font-size: 14px;
+	font-family: "FontAwesome";
+	color: var(--grey-mid);
+	position: absolute;
+	right: 30px;
+	top: 0px;
+}
+
+.categories-accordion .card-heading.active a:after {
+	content: "";
+	font-size: 14px;
+	font-family: "FontAwesome";
+	color: var(--grey-mid);
+	position: absolute;
+	right: 30px;
+	top: -1px;
+}
+
+.categories-accordion .card-heading a[aria-expanded=true]:after,
+.categories-accordion .card-heading>a.active:after {
+	content: "";
+	font-size: 14px;
+	font-family: "FontAwesome";
+	color: var(--grey-mid);
+	position: absolute;
+	right: 30px;
+	top: -1px;
+}
+
+.sidebar-filter {
+	position: relative;
+	margin-bottom: 60px;
+}
+
+.sidebar-filter .section-title {
+	margin-bottom: 50px;
+}
+
+.sideba-filter a {
+	font-size: 14px;
+	color: var(--grey-dark);
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 2px;
+	font-weight: 700;
+	display: inline-block;
+	padding: 5px 24px 5px 24px;
+	border: 2px solid var(--pink);
+	position: absolute;
+	right: 0;
+	bottom: -5px;
+	border-radius: 2px;
+}
+
+.sidebar-sizes,
+.sidebar-color {
+	margin-bottom: 40px;
+}
+
+.sidebar-sizes .section-title,
+.sidebar-color .section-title {
+	margin-bottom: 35px;
+}
+
+.sidebar-sizes .section-title h4,
+.sidebar-color .section-title h4 {
+	font-size: 18px;
+}
+
+.sidebar-sizes .size-list label,
+.sidebar-color .size-list label {
+	display: block;
+	padding-left: 20px;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: var(--grey-mid);
+	position: relative;
+	cursor: pointer;
+}
+
+.sidebar-sizes .size-list label input,
+.sidebar-color .size-list label input {
+	position: absolute;
+	visibility: hidden;
+}
+
+.sidebar-sizes .size-list label input:checked~.checkmark,
+.sidebar-color .size-list label input:checked~.checkmark {
+	border-color: var(--pink);
+}
+
+.sidebar-sizes .size-list label input:checked~.checkmark:after,
+.sidebar-color .size-list label input:checked~.checkmark:after {
+	border-color: var(--pink);
+	opacity: 1;
+}
+
+.sidebar-sizes .size-list label .checkmark,
+.sidebar-color .size-list label .checkmark {
+	position: absolute;
+	left: 0;
+	top: 4px;
+	height: 10px;
+	width: 10px;
+	border: 1px solid var(--grey-mid);
+	border-radius: 2px;
+}
+
+.sidebar-sizes .size-list label .checkmark:after,
+.sidebar-color .size-list label .checkmark:after {
+	position: absolute;
+	left: 0px;
+	top: -2px;
+	width: 11px;
+	height: 5px;
+	border: solid #ffffff;
+	border-width: 1.5px 1.5px 0px 0px;
+	-webkit-transform: rotate(127deg);
+	-ms-transform: rotate(127deg);
+	transform: rotate(127deg);
+	opacity: 0;
+	content: "";
+}
+
+.sidebar-color .color-list label {
+	text-transform: capitalize;
+}
+
+.pagination-option a {
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	border: 1px solid #f2f2f2;
+	border-radius: 50%;
+	font-size: 14px;
+	color: var(--grey-dark);
+	font-weight: 600;
+	line-height: 40px;
+	text-align: center;
+	-webkit-transition: all, 0.3s;
+	-o-transition: all, 0.3s;
+	transition: all, 0.3s;
+	margin-right: 6px;
+}
+
+.pagination-option a:last-child {
+	margin-right: 0;
+}
+
+.pagination-option a i {
+	font-weight: 600;
+}
+
+.pagination-option a:hover {
+	background: var(--grey-mid);
+	border-color: var(--grey-dark);
+	color: #ffffff;
+}
+
+
+/*________________________________________
+__________________________________________
+_______CORREZIONE IMG IMP. DA HOME________
+________________________________________*/
+
+/*.women .product-item-pic{
+    box-sizing: border-box;
+    background-repeat: none;
+    background-size: cover;
+}
+
+.product-item-pic{
+    
+    overflow: hidden;
+}
+
+.product-item-pic img{
+    width: 100%;
+    object-fit: contain;
+}*/
+
+.product-item{
+	display: grid;
+	height: 100%;
+}
+
+.product-item-pic img {
+	float: center;
+	width: 100%;
+	object-fit: contain;
+	height: 100%;
+  }
+
+.rating-price {
+	align-self: end;
+}
+
+.rating{
+	text-align: center;
+}
+
+.product-price{
+	text-align: center;
+}
+
+.card{
+	border-color: white;
+}

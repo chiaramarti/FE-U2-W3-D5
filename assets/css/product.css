@@ -1,0 +1,529 @@
+:root{
+    --pink: rgb(210, 26, 95);
+    --pink-pastel: rgb(255, 82, 146);
+    --green: rgb(0, 155, 125);
+    --green-pastel: rgb(98, 198, 178);
+    --tiffany: rgb(23, 162, 184);
+    --blu: rgb(0, 55, 125);
+    --blu-mid: rgb(45, 102, 175);
+    --blu-pastel: rgb(104, 149, 209);
+    --yellowpastel: rgb(224, 205, 140);
+    --grey-dark: rgb(48, 52,51);
+    --grey-mid: rgb(78, 90, 93);
+    --grey-clear: rgb(236, 236, 234);
+    --warning: rgb(255, 193, 7);
+    --info: rgb(23, 162, 184);
+    --corsivo: 'Lily Script One';
+    --text: 'Montserrat';
+    --textalt: 'Proza Libre';
+}
+
+
+/*accessories card*/
+
+/*new product*/
+
+
+/*.filters li:after {
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    height: 2px;
+    width: 100%;
+    background: #ca1515;
+    content: "";
+    opacity: 0;
+}*/
+
+/*container di tutte le card*/
+/*title*/
+
+
+
+.container-card{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+   
+   
+}
+
+.women .product-item-pic{
+    background-image: url('../images/maglia\ slide.jpg');
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top:10%;
+     height: 500px;
+ 
+
+   
+    
+}
+
+
+
+/*CARD con filtri*/
+.product-container{
+   height: 350px;
+   position: relative;
+}
+
+.bi{
+    color: rgb(255, 255, 255);
+}
+
+.bi:hover{
+    color: var(--pink);
+}
+
+.fa-star{
+    color: rgb(250, 219, 97);
+}
+
+
+.product-hover{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(74, 74, 74, 0.8);
+    padding-left: 0px;
+    position: absolute;
+    top: 80%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 15%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+}
+
+.product-container:hover .product-hover {
+    opacity: 1;
+}
+.product-hover li{
+    margin: 5px 15px;
+    font-size: 20pt;
+    color: var(--pink);
+}
+
+/*label*/
+.product-item-pic .label {
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: 500;
+    display: inline-block;
+    padding: 2px 8px;
+    text-transform: uppercase;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+  }
+  
+.new{
+    background-color: var(--green);
+}
+
+.out{
+    background-color: var(--grey-dark);
+}
+
+/*text*/
+.product-item-text{
+    text-align: center;
+    padding: 10px;
+}
+
+.product-item-text a{
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+/* parte kawtar*/
+
+
+   /* adesso inizio a modificare il css della parte descrittiva della pagina*/
+
+   .descrizionedx{
+    font-family: 'Montserrat', sans-serif;
+ 
+   }
+   
+   
+   .quantity{
+    padding-top:2%;
+   }
+
+   .prezzo{
+    font-family: 'Montserrat', sans-serif;
+    color:rgb(210, 26, 95);
+    font-weight: bold;
+    padding:5%;
+    font-size:20px;
+   }
+
+   .titolovestito{
+     font-family: 'Montserrat', sans-serif;
+     font-weight:bold;
+    font-size:40px;
+    text-align: left;
+    margin-bottom:5%;
+    text-transform: uppercase;
+
+   }
+
+   .stella{
+    background-color:yellow;
+   }
+
+   .rating{   /*le stelle*/
+    margin-bottom:5%;
+   }
+
+   .barra{  
+    font-family: 'Montserrat', sans-serif;
+    padding-top:5%;
+    font-size:20px;;
+    
+   }
+
+   .relatedpd{
+    
+    font-size:20px;
+    font-weight:300;
+    padding-bottom:5%;
+    margin-top:5%;
+    text-align:center;
+   }
+
+   .tabb{
+    font-family: 'Montserrat', sans-serif;
+    font-size:30px;
+   }
+
+
+   /*.equal-image-wrapper { ----QUESTO ERA PER IL CAROUSEL MA ANDATO MALE 
+    width:  250px;
+    height: 200px;
+    object-fit: cover;
+  
+    overflow: hidden; /* Ensures the image does not overflow the div */
+  /* }
+
+   .equal-image-wrapper img {
+    width: 100%; /* Make image fill the container */
+    /*height: auto; /* Scale height to maintain aspect ratio */
+    /* object-fit: cover; /* This makes the image cover the area without stretching */
+
+  /* }*/
+
+  .headerino{
+    font-family:'Montserrat', sans-serif;
+  }
+
+   .slide{
+    width:400px;
+   }
+  
+   
+   .container-fluid{
+  width:100%;
+padding-top:20%;
+   }
+
+   .lead{ 
+     font-size: 1.25rem;
+     font-weight:300;
+   }
+
+
+   .paragrafetto{
+    font-size:1.25rem;
+    font-weight: 300;
+    margin-top:1%;
+    margin-bottom:1%;
+    font-weight:300;
+    
+   }
+
+   .descriz{
+   
+    padding-top:1%;
+    margin-bottom:1%;
+    margin-top:2%;
+    font-size:20px;
+    color:rgb(210, 26, 95);
+ 
+
+   }
+
+   .container {
+   width: 100%;
+   
+    
+    margin-top: 2%;
+    
+    background: white;
+   
+  }
+  
+  .left, .right { /*contenitore desto e sinistro*/
+  margin-left:2%;
+  margin-right:2%;
+    
+    
+  }
+  
+  .flex {
+    display: flex;
+    flex-direction:row;
+
+  }
+  
+  .flex1 {
+    display: flex;
+  }
+  
+  .main_image {  /*immagine grande*/
+    
+    width: 300%;
+    margin-bottom: 1%;
+    object-fit: contain;
+    height: 500PX;
+
+  }
+  
+  .option img {  /*immagini piccole*/
+ 
+    flex-direction:row;
+    width: 100px;
+    height: 100px;
+    margin-top: 2%;
+    justify-content: center;
+   
+    
+  }
+
+
+  .Reledpd{
+    font-family: 'Montserrat', sans-serif;
+    font-size:30px;
+    font-weight:500;
+    text-align:center;
+    margin-top:10%;
+  }
+
+
+  .corpo{ /*BODY*/
+    
+    text-align:left;
+  }
+
+  .quantita{
+    font-family: 'Montserrat', sans-serif;
+    font-size:20px;
+    font-weight:500;
+
+  }
+
+  .disponibilita{
+    font-family: 'Montserrat', sans-serif;
+    font-size:20px;
+    font-weight:500;
+margin-top:3%;
+
+  }
+  
+  .misura{
+    font-family: 'Montserrat', sans-serif;
+    font-size:20px;
+    font-weight:500;
+    margin-top:3%;
+
+
+  }
+
+  .colore{
+    font-family: 'Montserrat', sans-serif;
+    font-size:20px;
+    font-weight:500;
+    margin-top:3%;
+
+  }
+
+  .promozioni{
+    font-family: 'Montserrat', sans-serif;
+    font-size:20px;
+    font-weight:500;
+    margin-top:3%;
+
+  }
+
+
+
+  .quantselect{
+margin-top: 2%;
+  }
+
+
+
+  .bottoncino{
+    background-color:rgb(210, 26, 95);
+    padding: 10px 14px;
+    border-radius:10px; /*bottone carrello*/
+    border:0;
+  }
+
+  .bottoncino:hover{
+    background-color: rgb(0, 155, 125); ;
+
+  }
+
+
+
+  .clothes{
+    font-family: 'Montserrat', sans-serif;
+    font-size:20px; 
+  }
+
+  .footerino{
+    font-family: 'Montserrat', sans-serif;
+    
+  }
+
+  .link{
+    font-weight:bold;
+  }
+
+
+
+
+/*MEDIA SCREEN DI CHIARA 
+/*@media only screen and (max-width: 767px) {
+    
+    .filters {
+      align-content: left;
+      text-align: left;
+      margin-bottom: 40px;
+      padding-left: 0px;
+    }
+
+    .filters li{
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+
+    .product-container{
+        height: 350px;
+        position: relative;
+    }
+
+    .contenmadre{
+        display:flex;
+        flex-direction: row;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .container-card {
+      max-width: 1170px;
+    }
+  }*/
+
+
+
+
+    @media only screen and (max-width:768px) {
+    .container {
+      max-width: 100%;
+      
+    }
+  
+    .left, .right {
+      width: 100%;
+    }
+  
+    .container {
+      flex-direction: column;
+    }
+
+    .corpo{
+        margin:5%;
+    }
+
+    .women .product-item-pic{
+        background-image: url('../images/maglia\ slide.jpg');
+        box-sizing: border-box;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top:10%;
+         height: 300px;
+     
+    }
+
+    .titolovestito{
+        font-family: 'Montserrat', sans-serif;
+        font-weight:600;
+       font-size:40px;
+       text-align: left;
+       margin-top:5%;
+       text-transform: uppercase;
+  
+  }
+
+  .main_image {  /*immagine grande*/
+    
+    width: 300%;
+    margin-bottom: 1%;
+    object-fit: contain;
+    height: 500PX;
+  }
+
+  .option img {  /*immagini piccole*/
+ 
+    flex-direction:row;
+    width: 100px;
+    height: 100px;
+    margin-top: 2%;
+    justify-content: center;
+  }
+
+
+
+  
+  
+  @media only screen and (max-width:480px) {
+    .container {
+      width: 100%;
+      height: auto;
+      padding: 10px;
+    }
+  
+    .left, .right {
+      padding: 0;
+    }
+  
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  
+    .option {
+      display: flex;
+ 
+    }
+  }}
+
+  @media only screen and (min-width: 1200px) {
+    .container-card {
+      max-width: 1170px;
+    }
+  }

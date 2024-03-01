@@ -1,0 +1,63 @@
+
+.logo{
+    margin-left: 20px;
+    width: 180px;
+    display: inline-block;
+    align-items: top;
+}
+.nav-link1:hover{
+    color: rgb(210, 26, 95);
+    transition: 0.2s;
+}
+.navbar{
+    box-shadow:rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.btn1{
+    margin: auto;
+    display: block;
+    background-color:rgb(210, 26, 95); ;
+    color: white;
+    border-radius: 20px;
+    border: hidden;
+}
+.btn1:hover{
+    background-color: rgb(210, 26, 95);
+    color: white;
+    scale: 1.05;
+    transition: 0.4s;
+}
+.bi{
+    color:rgb(210, 26, 95) ;
+    
+}
+.bottone1{
+    border: hidden;
+    font-size: 150%;
+    margin-right: 20px;
+}
+
+
+.admin i{
+    color: rgb(18, 18, 18);
+}
+
+.admin i:hover{
+    color: rgb(187, 31, 70);
+}
+
+.icon-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media screen and (max-width: 992px){
+    #navbarNav{
+        text-align: center;
+    }
+
+    .icon-flex a i{
+        margin: 0px 10px;
+    }
+
+}

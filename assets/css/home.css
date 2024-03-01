@@ -1,0 +1,541 @@
+:root{
+    --pink: rgb(210, 26, 95);
+    --pink-pastel: rgb(255, 82, 146);
+    --green: rgb(0, 155, 125);
+    --green-pastel: rgb(98, 198, 178);
+    --tiffany: rgb(23, 162, 184);
+    --blu: rgb(0, 55, 125);
+    --blu-mid: rgb(45, 102, 175);
+    --blu-pastel: rgb(104, 149, 209);
+    --yellowpastel: rgb(224, 205, 140);
+    --grey-dark: rgb(48, 52,51);
+    --grey-mid: rgb(78, 90, 93);
+    --grey-clear: rgb(236, 236, 234);
+    --warning: rgb(255, 193, 7);
+    --info: rgb(23, 162, 184);
+    --corsivo: 'Lily Script One';
+    --text: 'Montserrat';
+    --textalt: 'Proza Libre';
+}
+
+/************************************************
+*************************************************
+********* H  O  M  E ****************************
+*************************************************
+************************************************/
+
+/*----------------------------------
+-------------- HEADER  -------------
+------------------------------------*/
+.categories a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--grey-dark);
+    border-bottom: solid 3px var(--pink);
+}
+
+.categories a:hover{
+    border-bottom: solid 3px var(--green);
+    font-weight: bold;
+    transition: 80ms;
+}
+
+
+.categories-item.categories-large-item {
+    height: 638px;
+    padding-left: 70px;
+}
+
+.categories-item {
+    height: 314px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.categories h1{
+    font-family: var(--corsivo);
+    font-size: 34pt;
+    color:var(--grey-dark);
+}
+
+.categories h2{
+    font-family: var(--corsivo);
+    font-size: 28pt;
+    color:var(--grey-dark);
+}
+
+/*women card*/
+.women-header{
+    background-image: url('../images/Women-header.jpg');
+    box-sizing: border-box;
+    background-repeat: none;
+    background-size: cover;
+}
+
+.women-header .categories-text{
+    background-color:  rgba(215, 190, 107, 0.8);
+    padding: 20px;
+}
+
+
+
+/*men card*/
+.men-header{
+    background-image: url('../images/men-header3.jpg');
+    box-sizing: border-box;
+    background-repeat: none;
+    background-size: cover;
+    justify-content: end;
+}
+
+.men-header .categories-text{
+    background-color:  rgba(98, 198, 178, 0.8);
+    padding: 20px;
+    align-self: flex-end;
+    margin-bottom: 40px;
+    text-align: end;
+}
+
+/*kids card*/
+.kids-header{
+    background-image: url('../images/kids-header.avif');
+    box-sizing: border-box;
+    background-repeat: none;
+    background-size: cover;
+    justify-content: start;
+    margin-left: none;
+}
+
+.kids-header .categories-text{
+    background-color:  rgb(104, 149, 209, 0.7);
+    padding: 20px;
+    margin-left: 0px;
+    align-self: flex-end;
+    margin-bottom: 40px;
+}
+
+/*shoes card*/
+.shoes-header{
+    background-image: url('../images/shoes-header.jpg');
+    box-sizing: border-box;
+    background-repeat: none;
+    background-size: cover;
+    justify-content: end;
+    margin-left: none;
+}
+
+.shoes-header .categories-text{
+    background-color:  rgb(236, 236, 234, 0.8);
+    padding: 20px 50px;
+    align-self: flex-start;
+    margin-top: 40px;
+    text-align: end;
+}
+
+/*accessories card*/
+.accessories-header{
+    background-image: url('../images/accessories-header.png');
+    box-sizing: border-box;
+    background-repeat: none;
+    background-size: cover;
+    justify-content: start;
+    margin-left: none;
+}
+
+.accessories-header .categories-text{
+    background-color:   rgba(220, 112, 157, 0.9);
+    padding: 20px 40px;
+    align-self: flex-start;
+    margin-top: 40px;
+    text-align: start;
+}
+
+
+/*----------------------------------
+----------- FILTRI------------------
+------------------------------------*/
+/*new product*/
+.filters{
+   text-align: right;
+   margin-bottom: 50px;
+}
+
+.filters li{
+    font-size: 14px;
+    list-style: none;
+    display: inline-block;
+    color: #111111;
+    margin-right: 25px;
+    position: relative;
+    cursor: pointer;
+}
+
+.filters .active {
+    border-bottom: solid 3px var(--pink);
+}
+
+
+/*----------------------------------
+---- container di tutte le card-----
+------------------------------------*/
+/*title*/
+
+.section-title h4{
+    font-family: var(--corsivo);
+    font-size: 24pt;
+    border-left: solid 4px var(--pink);
+    padding-left: 14px;
+}
+
+.container-card{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.women .product-item-pic{
+    box-sizing: border-box;
+    background-repeat: none;
+    background-size: cover;
+}
+
+.product-item-pic{
+    float: left;
+    overflow: hidden;
+}
+
+.product-item-pic img{
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.men .product-item-pic{
+    box-sizing: border-box;
+    background-repeat: none;
+    background-size: cover;
+}
+
+/*CARD con filtri*/
+.product-container{
+   height: 350px;
+   position: relative;
+}
+
+.bi{
+    color: rgb(34, 34, 34);
+}
+
+.bi:hover{
+    color: var(--pink);
+}
+
+.fa-star{
+    color: rgb(250, 219, 97);
+}
+
+
+.product-hover{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(231, 230, 230, 0.852);
+    padding-left: 0px;
+    position: absolute;
+    top: 80%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 15%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+}
+
+.product-container:hover .product-hover {
+    opacity: 1;
+}
+.product-hover li{
+    margin: 5px 15px;
+    font-size: 20pt;
+    color: var(--pink);
+}
+
+/* .expand e .image-popup dovrebbero servire per ingrandire 
+l'immagine -- preparatorio se c'è tempo*/
+
+/*label*/
+.product-item-pic .label {
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: 500;
+    display: inline-block;
+    padding: 2px 8px;
+    text-transform: uppercase;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+  }
+  
+.new{
+    background-color: var(--green);
+}
+
+.out{
+    background-color: var(--grey-dark);
+}
+
+/*text*/
+.product-item-text{
+    text-align: center;
+    padding: 10px;
+}
+
+.product-item-text a{
+    text-decoration: none;
+}
+
+/*----------------------------------
+----------- CAROUUUUUUSEL-----------
+------------------------------------*/
+
+.carousel-home-custom{
+    height: 80vw;
+    max-height: 500px;
+    background-color: rgb(232, 150, 188);
+    background-image: url('../images/Cattura.png');
+    box-sizing: border-box;
+    background-repeat:no-repeat;
+    background-size: contain;
+}
+
+.carousel-home-custom .row{
+    height: 80vw;
+    max-height: 500px;
+}
+
+.carousel-home-custom .row .col{
+    width: 100vw;
+    padding: 10vw;
+}
+
+.carousel-home-custom h2{
+    font-family: var(--corsivo);
+    font-size: 6vw;
+}
+
+.carousel-home-custom a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--grey-dark);
+    border-bottom: solid 3px var(--pink);
+}
+
+.carousel-home-custom a:hover{
+    border-bottom: solid 3px var(--green);
+    font-weight: bold;
+    transition: 80ms;
+}
+
+.carousel-home-custom p{
+    text-transform: uppercase;
+    color: var(--pink);
+    font-size: 16pt;
+    font-weight: 500;
+}
+
+/*----------------------------------
+---------------TREND----------------
+------------------------------------*/
+.trend-item{
+    overflow: hidden;
+    margin-bottom: 35px;
+}
+
+.trend .section-title {
+    margin: 45px 0px;
+}
+
+.trend-item-pic{
+    float: left;
+    margin-right: 25px;
+    width: 90px;
+    height: 90px;
+    overflow: hidden;
+}
+
+.trend-item-pic img{
+    width: 100%;
+    object-fit: cover;
+}
+
+/*----------------------------------
+------------DISCOUNT----------------
+------------------------------------*/
+.discount-pic{
+    width: 100%;
+    float: left;
+    overflow: hidden;
+}
+
+.discount-pic img{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+
+.discount a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--grey-dark);
+    border-bottom: solid 3px var(--pink);
+}
+
+.discount a:hover{
+    border-bottom: solid 3px var(--green);
+    font-weight: bold;
+    transition: 80ms;
+}
+
+.discount-text{
+    background-color: white;
+    border-radius: 50%;
+    padding:5%;
+    width: 320px;
+    height: 320px;
+}
+
+.discount-text span, .discount-text h5{
+    text-transform: uppercase;
+    color: var(--pink);
+}
+
+.discount-text h2{
+    font-family: var(--corsivo);
+    font-size: 24pt;
+}
+
+.discount-countdown{
+    font-size: 18pt;
+    font-family: var(--text);
+    font-weight: 600;
+}
+
+.bg-grey{
+    background-color: var(--grey-clear);
+}
+
+.discount .container{
+    margin-bottom: 50px;
+}
+
+
+@media only screen and (max-width: 767px) {
+    
+    .women-header{
+        margin-right: 0px;
+    }
+
+    .men-header, .shoes-header{
+        margin-right: 0px;
+        margin-left: 10px;
+    }
+
+    .kids-header, .accessories-header{
+        margin-right: 10px;
+        margin-left: 0px;
+    }
+
+    .filters {
+      align-content: left;
+      text-align: left;
+      margin-bottom: 40px;
+      padding-left: 0px;
+    }
+
+    .filters li{
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+
+    .product-container{
+        height: 350px;
+        position: relative;
+    }
+
+    .carousel-home-custom .row .col{
+        background-color: rgba(255, 255, 255, 0.659);
+    }
+
+    .carousel-home-custom .text{
+        text-align: center;
+    }
+
+    .trend{
+        margin-left: 10%;
+    }
+
+    .discount .container{
+        width: 100%;
+        padding: 0px;
+        overflow: hidden;
+    }
+
+   /* .discount .row{
+        background-color: var(--grey-clear);
+    }*/
+    
+}
+
+@media only screen and (min-width: 767px) {
+    .carousel-home-custom .text{
+        text-align: end;
+    }
+
+    .carousel-home-custom h2{
+        font-family: var(--corsivo);
+        font-size: 5vw;
+    }
+    
+    .product-item-pic img {
+        height: 100%;
+    }
+
+    .discount .container{
+        width: 100%;
+        padding: 0px;
+        overflow: hidden;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .discount-pic img {
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 388px;
+      }
+}
+
+@media only screen and (min-width: 1200px) {
+    .container-card {
+      max-width: 1170px;
+    }
+
+    .carousel-home-custom .row .col{
+        background-color: none;
+    }
+
+   /* .discount .row{
+        background-color: none;
+    }*/
+
+  }
