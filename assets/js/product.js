@@ -1,19 +1,20 @@
-const URL = "https://striveschool-api.herokuapp.com/api/product/";
-const APIkey =
-  "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWUxYzA5ODRjNTllYzAwMTk5MGQ4NzgiLCJpYXQiOjE3MDkyOTM3MjAsImV4cCI6MTcxMDUwMzMyMH0.n7llZcSbLKkHGBmBrr5pRt7dwq8HfGQsDfX2uSO6d6Y";
+document.addEventListener("DOMContentLoaded", function () {
+  const URL = "https://striveschool-api.herokuapp.com/api/product/";
+  const APIkey =
+    "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWUxYzA5ODRjNTllYzAwMTk5MGQ4NzgiLCJpYXQiOjE3MDkyOTM3MjAsImV4cCI6MTcxMDUwMzMyMH0.n7llZcSbLKkHGBmBrr5pRt7dwq8HfGQsDfX2uSO6d6Y";
 
-fetch(URL, {
-  headers: {
-    authorization: APIkey,
-  },
-})
-  .then((response) => response.json())
-  .then((products) => {
-    // ho già acceduto all'array ora lo devo scorrere riassegnando al contempo delle variabili
-    products.forEach((product) =>
-      document.getElementById("products-container").insertAdjacentHTML(
-        "afterbegin",
-        `
+  fetch(URL, {
+    headers: {
+      authorization: APIkey,
+    },
+  })
+    .then((response) => response.json())
+    .then((products) => {
+      // ho già acceduto all'array ora lo devo scorrere riassegnando al contempo delle variabili
+      products.forEach((product) =>
+        document.getElementById("products-container").insertAdjacentHTML(
+          "afterbegin",
+          `
                 <!--card1-->
                 <div class="card1 card col-lg-4 p-3 col-sm-6 mix women">
                   <div class="product-item">
@@ -46,7 +47,8 @@ fetch(URL, {
                   </div>
                 </div>
               `
-      )
-    );
-  })
-  .catch((error) => console.error("Errore durante il recupero dei prodotti", error));
+        )
+      );
+    })
+    .catch((error) => console.error("Errore durante il recupero dei prodotti", error));
+});
